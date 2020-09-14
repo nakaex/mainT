@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import project1Lib
 
 class ViewController: UIViewController {
 
@@ -25,7 +26,10 @@ class ViewController: UIViewController {
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //        let vc = storyboard.instantiateViewController(withIdentifier: "MyStoryboardName")
 //        self.present(vc, animated: true, completion: nil)
-
+        
+        let frameworkBundle = Bundle(identifier: "jp.co.nakaex.project1-bundle")
+        let storyboard = UIStoryboard(name: "Main", bundle: frameworkBundle)
+        print(storyboard)
     }
 
 
